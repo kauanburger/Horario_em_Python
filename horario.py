@@ -14,7 +14,7 @@ nome = input('Qual o seu nome? ')
 if (horario_horas >= 0 and horario_horas < 12 ):
      print(emojize(f'Bom dia {nome}!! :sun:'))
 elif (horario_horas >= 12 and horario_horas < 18):
-    print (f'Boa tarde {nome}!!')
+    print (emojize(f'Boa tarde {nome}!! :sun_behind_cloud:'))
 else:
      print(emojize(f'Boa noite {nome}!! :last_quarter_moon_face:'))
 
