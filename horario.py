@@ -1,4 +1,5 @@
 from datetime import datetime, timezone, timedelta
+from emoji import emojize
 
 fuso = timezone(timedelta(hours=-3))
 horario_horas = int(datetime.now().time().strftime('%H'))
@@ -11,11 +12,11 @@ horario_minutos = int(horario_fuso.strftime('%M'))
 nome = input('Qual o seu nome? ')
 
 if (horario_horas >= 0 and horario_horas < 12 ):
-    print(f'Bom dia {nome} !!')
+     print(emojize(f'Bom dia {nome}!! :sun:'))
 elif (horario_horas >= 12 and horario_horas < 18):
     print (f'Boa tarde {nome}!!')
 else:
-    print(f'Boa noite {nome}!!')
+     print(emojize(f'Boa noite {nome}!! :last_quarter_moon_face:'))
 
 meio_dia_hora = int(12)
 dia_minutos = int(60)
